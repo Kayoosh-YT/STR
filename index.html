@@ -1,22 +1,140 @@
 <!DOCTYPE html><html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Рекламный баннер</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>@kayoosh — Профиль</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #0d1117;
+      color: #c9d1d9;
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 2rem 0;
+    }.ad-left, .ad-right {
+  width: 120px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ad-left {
+  margin-right: 1rem;
+}
+
+.ad-right {
+  margin-left: 1rem;
+}
+
+.profile-container {
+  background-color: #161b22;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1s ease-out, slideUp 0.7s ease-out;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+  border: 3px solid #9b5ffb;
+  animation: popIn 0.6s ease-out, rotateIn 1s ease-out;
+}
+
+.user-info h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #9b5ffb;
+  animation: fadeIn 1s ease-out;
+}
+
+.user-info p {
+  margin: 0.2rem 0;
+  animation: fadeIn 1s ease-out;
+}
+
+.profile-section {
+  margin-top: 1rem;
+  animation: slideUp 0.7s ease-out;
+}
+
+.profile-section h2 {
+  color: #9b5ffb;
+  margin-bottom: 0.5rem;
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes popIn {
+  from { transform: scale(0); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes rotateIn {
+  from { transform: rotate(-360deg); opacity: 0; }
+  to { transform: rotate(0); opacity: 1; }
+}
+
   </style>
 </head>
 <body>
-  <iframe data-aa='2390656' src='//ad.a-ads.com/2390656?size=120x600'
-    style='width:120px; height:600px; border:0px; padding:0; overflow:hidden; background-color: transparent;'>
-  </iframe>
+  <div class="ad-left">
+    <iframe data-aa='2390656' src='//ad.a-ads.com/2390656?size=120x600' style='width:120px; height:600px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+  </div>  <div class="profile-container">
+    <div class="profile-header">
+      <img src="img1.jpg" alt="Аватар" class="avatar" />
+      <div class="user-info">
+        <h1>@kayoosh</h1>
+        <p>Кай Миямото, 16 лет</p>
+        <p>Новосибирск → Питер → Япония</p>
+      </div>
+    </div>
+    <div class="profile-section">
+      <h2>О себе</h2>
+      <p>Привет, меня зовут Кай Миямото)</p>
+      <p>Я родился 11 марта 2009 года в Новосибирске, прожил там до 3 лет. Потом переехал в Питер, а в 7 лет улетел в Японию, где живу до сих пор.</p>
+      <p>Я интересуюсь криптовалютой, инвестирую небольшие суммы в разные токены и мечтаю запустить свой собственный токен.</p>
+      <p>Кроме того, я увлекаюсь аниме, играю в Роблокс, а также очень люблю тему SCP лабораторий и все, что с этим связано.</p>
+      <p>Я умею писать скрипты для Роблокс и создавать веб-приложения.</p>
+    </div>
+    <div class="profile-section">
+      <h2>Как со мной связаться</h2>
+      <p>Я всегда рад помочь! Если я не отвечаю сразу, не переживайте — можете меня пинговать сколько угодно, я постараюсь ответить, как только смогу!</p>
+    </div>
+    <div class="profile-section">
+      <h2>Мои мечты</h2>
+      <p>У меня есть куча идей и всего прочего, что я хотел бы реализовать.</p>
+      <p>Я мечтаю набрать 1 миллион подписчиков на YouTube и купить себе мощный компьютер, потому что мой нынешний с Алиэкспресс за 10 000 рублей почти ничего не тянет.</p>
+      <p>Поэтому я буду искренне рад, если вы понажимаете на рекламные баннеры на странице — это поможет приблизить мою мечту!</p>
+      <p>Кстати, чтобы эта страница стала ещё интереснее, я собираюсь её развивать и превратить сайт в нечто вроде моего личного уголка в этой тёмной сети интернета.</p>
+    </div>
+  </div>  <div class="ad-right">
+    <iframe data-aa='2390656' src='//ad.a-ads.com/2390656?size=120x600' style='width:120px; height:600px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+  </div>
 </body>
 </html>
